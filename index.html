@@ -1,16 +1,173 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> basic html website </title> <!-- title of the website -->
+        <meta charset = "utf-8"> <!-- these 2 meta tags should always be included -->
+        <meta name = "viewport" content = "width=device-width, initial-scale=1"> <!-- changing website scaling to dynamic -->
+
+        <title> Basic HTML Website </title> <!-- title of the website -->
     </head>
     <body>
         <style>
             body {
+                background-color: white;
+                color: black;
+            }
+
+            h1, h3 { text-align: center; }
+            .hyperlink { text-align: left; }
+            .image { text-align: right; }
+
+            .random-text {
                 text-align: center;
-                padding-top: 20%;
+                color: red;
+            }
+
+            .list {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .table {
+                display: flex;
+                justify-content: center;
+            }
+        
+            .table th, td {
+                border: 1px solid black;
+                padding: 8px;
+                text-align: center;
             }
         </style>
-        <img src = "adddd.PNG" alt = "jacob watching gamergirl"> <!-- adding image to site -->
-        <p>ahahahaa jacob watching gamergirl >:D</p> <!-- adding text -->
+
+
+        <h1> Basic HTML Website </h1>
+        <h3> Playing with HTML </h3>
+        <hr> <!-- draws a horizontal line -->
+
+        <div>
+            <div class = "hyperlink">
+                <a href = "https://youngwasd.github.io/flappybird/" target = "_blank"> Play my flappy bird game (in development) </a> <!-- hyperlink -->
+            </div>
+        </div>
+        
+        <hr>
+
+        <div>
+            <div class = "random-text">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac rhoncus ipsum.
+                    Pellentesque non leo quis turpis egestas dapibus aliquet ac nunc. Suspendisse dictum urna vitae ligula suscipit, 
+                    ac fermentum orci dictum. Ut libero justo, dapibus non finibus sit amet, cursus facilisis neque. Nulla facilisi. 
+                    Maecenas aliquet pretium congue. Curabitur consequat nibh iaculis arcu accumsan, vel placerat nisi tempus. Aliquam eget 
+                    consectetur ipsum. Etiam facilisis ante molestie est suscipit, consectetur lacinia arcu pellentesque. Etiam suscipit porta 
+                    neque posuere commodo. Fusce ultrices orci et odio tempor fermentum. 
+                </p>
+        
+                <p>
+                    <b> Here is some bold text </b><br>
+                    <i> Some text in italics </i><br>
+                    <u> This is an underlined text </u><br>
+                    <em> This is an emphasized text </em><br>
+                    <strong> Strong text </strong><br>
+                </p>
+            </div>
+        </div>
+        
+        <hr>
+
+        <div>
+            <div class = "image">
+                <img src = "adddd.PNG" alt = "jacob watching gamergirl"> <!-- adding image to site -->
+                <p> ahahahaa jacob watching gamergirl >:D </p> <!-- adding text -->
+            </div>
+        </div>
+
+        <hr>
+
+        <div>
+            <div class = "list">
+                <ul>
+                    <caption> Unordered list of random games </caption>
+                    <li> League of Legends
+                        <ul>
+                            <li> This is a bad game </li>
+                        </ul>
+                    </li>
+        
+                    <li> Palword
+                        <ul>
+                            <li> This is also a bad game </li>
+                        </ul>
+                    </li>
+        
+                    <li> Minecraft
+                        <ul>
+                            <li> This is a decent game </li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <ol>
+                    <caption> Ordered list of fast food chains </caption>
+                    <li> McDonalds
+                        <ol>
+                            <li> This is a good place </li>
+                        </ol>
+                    </li>
+        
+                    <li> Wendys
+                        <ol>
+                            <li> This is a bad place </li>
+                        </ol>
+                    </li>
+        
+                    <li> In and Out
+                        <ol>
+                            <li> I have not eaten here enough </li>
+                        </ol>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        
+        <hr>
+        
+        <div>
+            <div class = "table">
+                <table cellspacing = "0">
+                    <caption> Random Table </caption>
+                    <tr>
+                        <th></th>
+                        <th colspan = "2"> Time </th>
+                        <th> Date </th>
+                        <th> Activity </th>
+                    </tr>
+        
+                    <tr>
+                        <td rowspan = "3"> Winter Season </td>
+                        <td> Start: 14:00 </td>
+                        <td> End: 15:00 </td>
+                        <td> 1/23/2012 </td>
+                        <td> Shopping </td>
+                    </tr>
+        
+                    <tr>
+                        <td> Start: 17:00 </td>
+                        <td> End: 20:00 </td>
+                        <td> 1/25/2012 </td>
+                        <td> Eating </td>
+                    </tr>
+        
+                    <tr>
+                        <td> Start: 10:00 </td>
+                        <td> End: 12:00 </td>
+                        <td> 1/30/2012 </td>
+                        <td> Reading </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
     </body>
 </html>
